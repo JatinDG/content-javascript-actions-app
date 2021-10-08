@@ -11,4 +11,4 @@ jobs:
       with:
         who-to-greet: 'Jatin Agarwal'
     - name: Get the output same time
-      run: echo "The time was ${{steps.hello.outputs.time}} 
+      run: echo "The time was ${{steps.hello.outputs.time}}"
