@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: actions/ceckout@v2
+      uses: actions/checkout@v2
       with:
         who-to-greet: 'Jatin Agarwal'
     - name: Get the output same time
