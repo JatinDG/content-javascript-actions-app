@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+    - name: Hello world action step
+      id: hello
+      uses: actions/ceckout@v2
+      with:
+        who-to-greet: 'Jatin Agarwal'
+    - name: Get the output same time
+      run: echo "The time was ${{steps.hello.outputs.time}} 
